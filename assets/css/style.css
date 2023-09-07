@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* common selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainclr:#a01722;
+    --lightclr:#b0b0b0;
+    --tclr:#181028;
+    --pft: 'Merriweather', serif;
+    --hft:'Montserrat', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-family: 'Merriweather', serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block !important;
+}
+
+a:hover{
+    color: var(--mainclr) !important;
+}
+
+ul li{
+    list-style: none;
+}
+
+.logo{
+    width: 7rem;
+}
+
+.nav-link:hover{
+    color: var(--mainclr);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.headline{
+    letter-spacing: .4rem;
+    line-height: 1.1;
+}
+
+.net{
+    color: var(--mainclr);
+}
+
+.hello{
+    background-color: var(--mainclr) !important;
+    color: whitesmoke;
+}
+
+.hello:hover{
+    background-color: var(--lightclr) !important;
+    color: var(--tclr) !important;
+}
+
+.brochure{
+    background-color: var(--lightclr);
+    /* margin-bottom: .5rem; */
+}
+
+.brochure:hover{
+    background-color: var(--mainclr);
+    color: #f0f0f0 !important;
+}
+
+.hero{
+    position: relative;
+    overflow: hidden;
+}
+
+.shape{
+    background-color: var(--lightclr);
+    width: 120rem;
+    height: 35rem;
+    border-radius: 0 0 70% 60%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: .1;
+}
+
+.brief{
+    /* width: 100vw; */
+    display: block;
+    background-color: var(--mainclr);
+}
+
+.text-slider{
+    background-color: white;
+    overflow-x: hidden;
+    
+}
+
+.text-slider h5{
+    margin-top: 5px;
+}
+
+.offer-info h5{
+    color: var(--mainclr);
+}
+.offer-info p{
+    color: var(--tclr);
+}
