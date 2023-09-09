@@ -30,8 +30,8 @@
     <nav class="navbar shadow-sm navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index.html"><img class="logo" src="assets/media/logo.png" alt="fonsbd logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars-staggered" onclick="closeicon(this)"></i></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" data-bs-toggle="offcanvas" ><i class="fa-solid fa-bars-staggered" onclick="closeicon(this)"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold text-dark p-2">
@@ -79,13 +79,15 @@
                 <h3 class="fs-5 mt-4">Connecting the World, One Fiber at a Time! 18 Years of Excellence in Exporting Fiber Optic Solutions. Your Trusted Partner in Cutting-Edge Connectivity.</h3>
 
                 <div class="cta d-flex flex-column flex-md-row mt-5">
-                  <a class=" hello fs-5 py-2 px-4 fw-bold rounded-pill text-center mb-3 mb-md-0" href="#"> Say Hello! <i class="fa-solid fa-paper-plane"></i></a>
+                  <a class=" hello d-none d-md-block fs-5 py-2 px-4 fw-bold rounded-pill text-center mb-3 mb-md-0" href="#"> Say Hello! <i class="fa-solid fa-paper-plane"></i></a>
+                  <a class=" hello d-block d-md-none fs-5 py-2 px-4 fw-bold rounded-pill text-center mb-3 mb-md-0" href="#"> Get A Quote <i class="fa-solid fa-paper-plane"></i></a>
                 <a class="brochure fs-5 ms-2 py-2 px-3 rounded-pill fw-bold text-dark text-center" href="#"> Fons Brochure <i class="fa-solid fa-file-arrow-down"></i></a>
                 </div>
 
             </div>
             <div class="col">
               <img class="img-fluid mt-5 mt-md-3" src="assets/media/hero.png" alt="">
+              <!-- <video src="assets/media/fonsbd.mp4" class="video-fluid" autoplay loop muted></video> -->
           </div>
           </div>
         </div>
@@ -94,16 +96,49 @@
       <!-- hero section end  -->
 
       <!-- brief section start  -->
-      <secion class="brief container-fluid my-5 ">
-        <div class="brief-info container my-5 py-4 text-light">
+      <secion class="brief container-fluid my-5 shadow-sm ">
+        <div class="brief-info container py-5 text-light">
           <h2 class="brief-title fw-bold "> Fons Bangladesh Ltd. At a Glance </h2>
         <p>Fons Bangladesh Ltd is the only Fiber Optic manufacturer in Bangladesh to export Fiber Optic Products for last 15 years. It is a USA & Denmark Joint Venture Company. Our Products include Active, Passive and Testing Equipment for Telecom & CATV Sector.</p>
         </div>
       </secion>
       <!-- brief section end  -->
 
+      <!-- slider section start  -->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="assets/media/slide (1).jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/media/slide (2).jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/media/slide (3).jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/media/slide (4).jpg". class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/media/slide (5).jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/media/slide (6).jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- slider section ends -->
+
       <!-- offer section start  -->
-      <div class="offer-title container my-5">
+      <div class="offer-title container my-5 py-3 shadow-sm">
         <h2 class="fs-2 fw-bold text-center text-dark"> Explore Premium Fiber <br>Network Equipment! </h2>
         <p class="fs-6 text-center text-dark my-4">Elevate your fiber internet with top-tier network gear for seamless, lightning-fast connections.</p>
       <div class="offer-info mx-auto">
@@ -134,8 +169,8 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quia facere reiciendis explicabo atque eveniet?</p>
           </div>
           <div class=" col-12 col-md-4 text-center my-5">
-            <i class="fa-solid fa-suitcase-medical fa-2x"></i>
-            <h5 class="fs-4 fw-bold mt-3">Servicing Training</h5>
+            <i class="fa-solid fa-gears fa-2x"></i>
+            <h5 class="fs-4 fw-bold mt-3">Servicing & Training</h5>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quia facere reiciendis explicabo atque eveniet?</p>
           </div>
          
@@ -144,6 +179,245 @@
         
       </div>
       <!-- offer section end -->
+
+      <!-- feature products section start  -->
+      <div class="product-area container-fluid py-5">
+        <div class="product-info container text-center">
+          <div class="row">
+            <div class="col-12 py-5">
+              <h2 class="fw-bold">Our <span>Featured</span> Products</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ad?</p>
+            </div>
+            <div class="products-card">
+              <div class="card-group mb-3">
+                <div class="card mx-3">
+                  <img src="assets/media/product (1).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">SFP Module</h5></a>
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (2).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Media Convertor</h5></a>
+
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (3).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Under Ground Joint Clousers</h5></a>
+
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (4).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Fiber Cable</h5></a>
+ 
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (5).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Fiber Optic & RO Equipment</h5></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card mx-3">
+                  <img src="assets/media/product (6).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Energy Storage - Fluid Energy</h5></a>
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (7).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Patchcord / Pigtail</h5></a>
+
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (8).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                   <a href=""> <h5 class="card-title">ODF</h5></a>
+
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (9).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                   <a href=""> <h5 class="card-title">Rack Mount</h5></a>
+ 
+                  </div>
+                </div>
+                <div class="card mx-3">
+                  <img src="assets/media/product (10).jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <a href=""><h5 class="card-title">Structured Cabling</h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- feature products section end  -->
+
+      <!-- clients section start  -->
+
+      <div class="client-area container-fluid py-3 shadow-sm">
+        <div class="client-info container py-5">
+          <div class="row d-flex align-center flex-column flex-md-row mx-auto">
+            <div class="col-12 col-md-4 text-center text-md-start">
+              <h2 class="fw-bold">Our Clients</h2>
+              <p class="client-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero!</p>
+            </div>
+            <div class="col-12 col-md-8">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="assets/media/client-1.png" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/media/client-2.png" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/media/client-1.png" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/media/client-2.png". class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/media/client-1.png" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/media/client-2.png" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- clients section ends  -->
+
+      <!-- cta section start  -->
+      <section class="cta-area container-fluid py-5">
+        <div class="cta-info p-5 m-5 mx-auto container shadow-sm">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fw-bold text-light">Unlock the Power of Servers!</h2>
+              <p class="text-light">Experience seamless sharing and storage with our cutting-edge server solutions.</p>
+              <a href="#" class="cta-button mt-3 ">Get Your Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- cta section ends  -->
+
+      <!-- footer section start  -->
+      <section class="big-footer container-fluid py-5">
+        <div class="footer-area py-5 container mx-auto shadow-sm">
+          <div class="row d-flex flex-column flex-md-row">
+            <div class="col-12 col-md-3 my-3 my-md-0">
+              <img class="mb-5 flogo" src="assets/media/logo.png" alt="">
+              <h5 class="text-uppercase fw-bold mt-5">Member Of</h5>
+              <img class="img-fluid me-2" src="assets/media/member-1.png" alt="">
+              <img class="img-fluid me-2" src="assets/media/member-2-removebg-preview.png" alt="">
+              <img class="img-fluid me-2" src="assets/media/member-3-removebg-preview.png" alt="">
+            </div>
+          
+          <div class="col-12 col-md-2 my-3 my-md-0">
+            <h5 class="">Service</h5>
+            <ul>
+              <li>
+                Consultation</li>
+              <li>
+                Installation</li>
+              <li>Maintenance</li>
+              <li>Network Tools Rental</li>
+              <li>Training</li>
+            </ul>
+          </div>
+          
+          <div class="col-12 col-md-3 my-3 my-md-0">
+            <h5 class="">Industry Overview</h5>
+            <div class="list d-flex">
+              <div class="l1">
+                <ul class="pe-3">
+                  <li>
+                    Telecom Mobile Operators</li>
+                  <li>
+                    Complete Backhaul Solutions</li>
+                  <li>NTTN Operators</li>
+                  <li>ICX</li>
+                  <li>IIG</li>
+                  <li>IGW</li>
+                  <li>ISP</li>
+                </ul>
+              </div>
+              <div class="l2">
+                <ul>
+                  <li>
+                    Banks</li>
+                  <li>
+                    TV Channels</li>
+                  <li>Enterprises</li>
+                  <li>Hotels</li>
+                  <li>Military</li>
+                  <li>Government Institutions</li>
+                  <li>Education Centers</li>
+                  <li>Large Enterprises</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-4 my-3 my-md-0"> 
+            <h5 class="">Contact Info</h5>
+            <ul>
+              <li>143/1 New Baily Road, Dhaka-1000, Bangladesh</li>
+
+              <li class="my-4"><i class="fa-solid fa-phone-volume me-1"></i> <span class="fw-bold">Phone :</span><a href="tel:+880 2222226654">+880 2222226654, 831 9328</a> <br>
+                <i class="fa-solid fa-fax me-2"></i><span class="fw-bold">Fax :</span> <a href="fax:8802 831 2928">8802 831 2928</a> </li>
+
+              <li> <i class="fa-solid fa-envelope me-2"></i><span class="fw-bold">Email:</span> <a href="mailto:sales@fonsbd.com">sales@fonsbd.com</a> 
+              <br><i class="fa-solid fa-globe me-2"></i><span class="fw-bold">Website:</span> <a href="fonsbd.com">www.fonsbd.com</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section ends -->
+
+      <!-- bottom bar start -->
+      <div class="bbar-area py-1 container-fluid shadow-sm">
+        <div class="b-bar contaier">
+          <div class="row">
+            <div class="col-12">
+              <h6 class="text-center text-light mt-1"> Copyright © 2023 Fons Bangladesh Ltd. All rights reserved</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- bottom bar ends  -->
 
 
 

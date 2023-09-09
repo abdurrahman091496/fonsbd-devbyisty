@@ -9,7 +9,9 @@
 }
 
 :root{
-    --mainclr:#a01722;
+    --maintclr:#a01722;
+    --mainclr:linear-gradient(to left, #ed213a, #93291e);
+    --mainclrd: #ffaeb4;
     --lightclr:#b0b0b0;
     --tclr:#181028;
     --pft: 'Merriweather', serif;
@@ -41,7 +43,7 @@ a{
 }
 
 a:hover{
-    color: var(--mainclr) !important;
+    color: var(--maintclr) !important;
 }
 
 ul li{
@@ -52,8 +54,14 @@ ul li{
     width: 7rem;
 }
 
+.nav-link{
+    border-radius: 5%;
+    transition: .5s all linear;
+}
+
 .nav-link:hover{
-    color: var(--mainclr);
+    color: white !important;
+    background: var(--mainclr);
 }
 
 .navbar-toggler:focus{
@@ -65,27 +73,33 @@ ul li{
     line-height: 1.1;
 }
 
+video{
+    width: 20rem;
+}
+
 .net{
-    color: var(--mainclr);
+    color:transparent;
+    -webkit-text-stroke: .2rem;
+    -webkit-text-stroke-color: var(--maintclr);
 }
 
 .hello{
-    background-color: var(--mainclr) !important;
+    background: var(--mainclr) !important;
     color: whitesmoke;
 }
 
 .hello:hover{
-    background-color: var(--lightclr) !important;
+    background: var(--lightclr) !important;
     color: var(--tclr) !important;
 }
 
 .brochure{
-    background-color: var(--lightclr);
+    background: var(--lightclr);
     /* margin-bottom: .5rem; */
 }
 
 .brochure:hover{
-    background-color: var(--mainclr);
+    background: var(--mainclr);
     color: #f0f0f0 !important;
 }
 
@@ -108,7 +122,14 @@ ul li{
 .brief{
     /* width: 100vw; */
     display: block;
-    background-color: var(--mainclr);
+    background: var(--mainclr)
+}
+
+
+.member-area h2{
+    color: transparent;
+    -webkit-text-stroke: .2rem;
+    -webkit-text-stroke-color:var(--mainclr) ;
 }
 
 .text-slider{
@@ -122,8 +143,89 @@ ul li{
 }
 
 .offer-info h5{
-    color: var(--mainclr);
+    color: var(--maintclr);
 }
 .offer-info p{
     color: var(--tclr);
+}
+
+.product-info span{
+    color: var(--maintclr);
+}
+
+
+
+.client-info h2{
+    color: transparent;
+    -webkit-text-stroke: .1rem;
+    -webkit-text-stroke-color: var(--maintclr) ;
+}
+
+.card{
+    overflow: hidden;
+    transition: transform .5s;
+    
+}
+
+
+.card h5{
+    font-weight: bold;
+    color: var(--tclr) !important;
+    font-size: medium;
+}
+
+.card a h5:hover{
+    color: var(--maintclr) !important;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
+.cta-info{
+    background: var(--mainclr);
+    border-radius: 20px;
+}
+.cta-button{
+    padding: 1rem;
+    border-radius: 15px;
+    background: white;
+    font-size: large;
+    font-weight: bold;
+    color: var(--tclr);
+    transition: .5s all linear;
+}
+
+.cta-button:hover{
+    border-radius: 0;
+}
+
+
+
+.footer-area h5{
+    color: var(--maintclr);
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-area i{
+    color: var(--maintclr);
+}
+
+.footer-area a{
+    color: var(--tclr);
+}
+
+.footer-area img{
+    width: 25%;
+}
+
+.flogo{
+    width: 70% !important;
+}
+
+.bbar-area{
+    background: var(--mainclr);
 }
